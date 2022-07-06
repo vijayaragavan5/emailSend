@@ -1,13 +1,13 @@
 <?php  
  
 if(isset($_POST['submit'])) {
- $mailto = "hmawebdesign@hotmail.com";  //My email address
+ $mailto = "vijayaragavan171998@hotmail.com";  //My email address
  //getting customer data
  $name = $_POST['name']; //getting customer name
  $fromEmail = $_POST['email']; //getting customer email
  $phone = $_POST['tel']; //getting customer Phome number
  $subject = $_POST['subject']; //getting subject line from client
- $subject2 = "Confirmation: Message was submitted successfully | HMA WebDesign"; // For customer confirmation
+ $subject2 = "Confirmation: Message was submitted successfully "; // For customer confirmation
  
  //Email body I will receive
  $message = "Cleint Name: " . $name . "\n"
@@ -18,7 +18,7 @@ if(isset($_POST['submit'])) {
  $message2 = "Dear" . $name . "\n"
  . "Thank you for contacting us. We will get back to you shortly!" . "\n\n"
  . "You submitted the following message: " . "\n" . $_POST['message'] . "\n\n"
- . "Regards," . "\n" . "- HMA WebDesign";
+ . "Regards," . "\n" . "- vijay";
  
  //Email headers
  $headers = "From: " . $fromEmail; // Client email, I will receive
